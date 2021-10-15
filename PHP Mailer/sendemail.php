@@ -20,14 +20,14 @@ if(isset($_POST['submit'])){
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'sabari.rishi32@gmail.com'; // Gmail address which you want to use as SMTP server
-    $mail->Password = 'priyasabari33'; // Gmail address Password
+    $mail->Username = ''; // Gmail address which you want to use as SMTP server
+    $mail->Password = ''; // Gmail address Password
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '587';
 
-    $mail->setFrom('sabari.rishi32@gmail.com'); // Gmail address which you used as SMTP server
-    $mail->addAddress('sabari.rishi32@gmail.com'); 
+    $mail->setFrom(''); // Gmail address which you used as SMTP server
+    $mail->addAddress(''); 
   
     $mail->isHTML(true);
     $mail->Subject = ' subject';
@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
 
    $alert = '<div class="alert-success" id="error">
            <script>
-          alert("thanks for contacting us - Your message sent successfully"); 
+          alert(" "); //message to be display
           </script>
    </div>';
      
